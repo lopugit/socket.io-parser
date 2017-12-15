@@ -2,7 +2,7 @@
 /**
  * Module dependencies.
  */
-
+var CircularJSON = require('circular-json');
 var debug = require('debug')('socket.io-parser');
 var Emitter = require('component-emitter');
 var hasBin = require('has-binary2');
@@ -170,7 +170,7 @@ function encodeAsString(obj) {
 
   // json data
   if (null != obj.data) {
-    str += JSON.stringify(obj.data);
+    str += CircularJSON.stringify(obj.data);
   }
 
   debug('encoded %j as %s', obj, str);
@@ -327,7 +327,7 @@ function decodeString(str) {
 
 function tryParse(p, str) {
   try {
-    p.data = JSON.parse(str);
+    p.data = CircularJSON.parse(str);
   } catch(e){
     return error();
   }
