@@ -1,8 +1,10 @@
 
-# socket.io-parser
+# alopu-socket.io-parser
 
 [![Build Status](https://secure.travis-ci.org/socketio/socket.io-parser.svg?branch=master)](http://travis-ci.org/socketio/socket.io-parser)
 [![NPM version](https://badge.fury.io/js/socket.io-parser.svg)](http://badge.fury.io/js/socket.io-parser)
+
+A simple modification of the standard socket.io-parser which supports Circular Stringification with use of [circular-json](https://github.com/WebReflection/circular-json) by Web Reflection
 
 A socket.io encoder and decoder written in JavaScript complying with version `3`
 of [socket.io-protocol](https://github.com/socketio/socket.io-protocol).
