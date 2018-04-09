@@ -4,7 +4,7 @@
 [![Build Status](https://secure.travis-ci.org/socketio/socket.io-parser.svg?branch=master)](http://travis-ci.org/socketio/socket.io-parser)
 [![NPM version](https://badge.fury.io/js/socket.io-parser.svg)](http://badge.fury.io/js/socket.io-parser)
 
-A simple modification of the standard socket.io-parser which supports Circular Stringification with use of [circular-json](https://github.com/WebReflection/circular-json) by Web Reflection
+A simple modification of the standard socket.io-parser which supports Circular Stringification with use of [circular-json](https://github.com/WebReflection/circular-json) by [Web Reflection](https://github.com/WebReflection)
 
 A socket.io encoder and decoder written in JavaScript complying with version `3`
 of [socket.io-protocol](https://github.com/socketio/socket.io-protocol).
@@ -22,7 +22,7 @@ Used by [socket.io](https://github.com/automattic/socket.io) and
 ### Encoding and decoding a packet
 
 ```js
-var parser = require('socket.io-parser');
+var parser = require('alopu-socket.io-parser');
 var encoder = new parser.Encoder();
 var packet = {
   type: parser.EVENT,
@@ -46,7 +46,7 @@ encoder.encode(packet, function(encodedPackets) {
 ### Encoding and decoding a packet with binary data
 
 ```js
-var parser = require('socket.io-parser');
+var parser = require('alopu-socket.io-parser');
 var encoder = new parser.Encoder();
 var packet = {
   type: parser.BINARY_EVENT,
