@@ -15,7 +15,7 @@
     "circular-json": "^0.4.0",
     "component-emitter": "1.2.1",
     "debug": "~2.6.4",
-    "has-binary2": "~1.0.2",
+    "has-binary2": "git+https://github.com/lopugit/has-binary2.git",
     "isarray": "2.0.1"
   },
   "devDependencies": {
